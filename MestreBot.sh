@@ -25,16 +25,16 @@ Help()
 read  -p " Pergunte ao mestre, ele sempre reponde! " PERGUNTA
 
 
-if [[ $PERGUNTA == *'criador'* ]]; then
+if [[ $PERGUNTA == *'criador'* || $PEGUNTA == *'program'* || $PERGUNTA == *'invento'* || $PERGUNTA == *'autor'*  ]]; then
         echo
-        echo " Meu criador é o João Pedro da 1TDCF, o rm dele é 94587 "
+        echo " Meu criador é o João Pedro da 1TDCF, o RM dele é 94587 "
         echo
         echo " Da uma boa nota pra ele professor, por favor "
         echo
 fi
 
 
-if [[ $PERGUNTA == *'scan'* ]]; then
+if [[ $PERGUNTA == *'scan'* || $PERGUNTA == *'nmap'* || $PERGUNTA == *'verifi'* || $PERGUNTA *'conect' ]]; then
         echo
         echo " Opa, opa ,opa "
         echo
@@ -83,7 +83,7 @@ fi
 if [[ $PERGUNTA == *'serviço'* ]]; then
         echo
         echo "Só um segundo chefe, to terminando de fazer meu café "
-        sleep
+        sleep 1
         echo 
         ss -atun
         echo
