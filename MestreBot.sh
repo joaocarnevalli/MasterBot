@@ -11,16 +11,6 @@ HOURS=`date | cut -d" " -f4 | cut -d: -f1`
 MINUTES=`date | cut -d" " -f4 | cut -d: -f2`
 NUMERO=$(($RANDOM%4))
 
-# Variavel de Erro
-
-Error()
-{
-    echo "~: Irmão, digita alguma coisa que eu saiba fazer!"
-    echo
-    echo "~: Se precisar de ajuda com os comandos, só usar o comando hackerbot -help"
-    echo
-}
-
 # Primeira mensagem do programa
 
 Salve()
@@ -297,7 +287,16 @@ Conexao()
             sleep 1
             echo
             read -p "~: Me fala o host ai: " HOST
-            ping -c 4 $HOST
+            PING="ping -c 4 $HOST"
+            $PING
+            if [ $? -eq 0 ]
+            then
+                    echo
+                    echo "O servidor esta Online :/"
+            else
+                    echo
+                    echo "O servidor esta Offline :)"
+            fi
             sleep 1
             echo
             echo "~: Verificacao Finalizada!"
@@ -314,7 +313,16 @@ Conexao()
             echo
             read -p "~: Terminei aqui, me fala o host ai: " HOST
             sleep 1
-            pinc -c 4 $HOST
+            PING="ping -c 4 $HOST"
+            $PING
+            if [ $? -eq 0 ]
+            then
+                    echo
+                    echo "O servidor esta Online :/"
+            else
+                    echo
+                    echo "O servidor esta Offline :)"
+            fi
             sleep 1
             echo
             echo "Ja fiz!"
@@ -324,7 +332,16 @@ Conexao()
             echo
             echo "~: Me fala o host: " HOST
             sleep 1
-            pinc -c 4 $HOST
+            PING="ping -c 4 $HOST"
+            $PING
+            if [ $? -eq 0 ]
+            then
+                    echo
+                    echo "O servidor esta Online :/"
+            else
+                    echo
+                    echo "O servidor esta Offline :)"
+            fi
             sleep 1
             echo
             echo "Completo!"
@@ -337,7 +354,16 @@ Conexao()
             echo
             read -p "Brincadeira, me fala o host que vamos verificar: " HOST
             sleep 1
-            pinc -c 4 $HOST
+            PING="ping -c 4 $HOST"
+            $PING
+            if [ $? -eq 0 ]
+            then
+                    echo
+                    echo "O servidor esta Online :/"
+            else
+                    echo
+                    echo "O servidor esta Offline :)"
+            fi
             sleep 1
             echo
             echo "Feito!"
@@ -517,11 +543,11 @@ GoBuster()
 {
 		case $NUMERO in
 		*'0'*)
-            sleep
+            sleep 1
             echo
             read -p "~: Me diz o alvo ai parceiro" ENEMY
             echo
-            sleep
+            sleep 1
             gobuster dir -u $ENEMY -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
             echo
             echo "~: Ataque completo!"
@@ -701,10 +727,8 @@ case $REQUEST in
                 Autor
         
         ;;
-        *''*)
-                echo "Ainda nao sei oque fazer com isso..."
 
-        ;;
+
         *'GoBuster'*)
                 GoBuster
 
@@ -724,6 +748,9 @@ case $REQUEST in
         *'Gobuster'*)
                 GoBuster
 
-        
-        
+        ;;
+        *''*)
+                Ajuda
+
+        ;;
 esac
