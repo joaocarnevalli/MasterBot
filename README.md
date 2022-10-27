@@ -2,7 +2,7 @@
 
 # MasterBOT 🖥 </div>
 
-<img src ="https://i.pinimg.com/originals/d7/d6/4e/d7d64eed5d4f58b48886c3cadbb2224b.gif" align="right" width="250px" height="300px">
+<img src ="https://i.pinimg.com/originals/d7/d6/4e/d7d64eed5d4f58b48886c3cadbb2224b.gif" align="right" width="250px" height="340px">
 
 <div align="center">
   
