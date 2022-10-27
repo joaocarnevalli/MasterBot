@@ -1,20 +1,20 @@
-<p align="right"><a href="https://github.com/joaocarnevalli/MasterBot/edit/main/README.ptbr.md">English</a> | <strong>Português</strong> </p>
+<p align="right"><strong>English</strong> | <a href="https://github.com/joaocarnevalli/DoorKnocker-PortScanner/blob/main/README.pt-br.md">Português</a></p>
 
 <div align="center">
 
 # MasterBOT 🖥 </div>
 
-<img src ="https://i.pinimg.com/originals/d7/d6/4e/d7d64eed5d4f58b48886c3cadbb2224b.gif" align="right" width="250px" height="390px">
+<img src ="https://i.pinimg.com/originals/d7/d6/4e/d7d64eed5d4f58b48886c3cadbb2224b.gif" align="right" width="250px" height="340px">
 
 <div align="center">
   
 ## Ideia 💡</div>
 
 ## **Objetivo:**
-> Desenvolver um robo que seja capaz de executar comandos dentro do Linux utilizando Programação em Shell Script. Este robo deverá ser capaz de entender um pedido do usuário, através das utilização de palavras chaves para que ele execute o que for solicitado.
+> Develop a robot that is capable of executing commands within Linux using Shell Script Programming. This robot must be able to understand a user's request, through the use of keywords so that it executes what is requested.
 
 ## **Desafio**
-> O seu robo deverá ser capaz de executar 9  funções abaixo através de  comandos utilizando ferramentas distintas dentro do Linux, através do entendimento das instruções conforme abaixo:
+> Your robot should be able to perform 9 functions below through commands using different tools within Linux, by understanding the instructions as below:
            
 
 
@@ -26,25 +26,25 @@
 
 ## ㅤSetup 🔌 </div>
 
-ㅤBaixe o setup.
+ㅤDownload the setup.
 
 ```sh
 git clone https://github.com/joaocarnevalli/MasterBot
 ```
 
-ㅤDepois de baixado, de as permissões para o programa.
+ㅤOnce downloaded, give the program permissions.
 
 ```sh
 chmod 755 MasterBot/MasterBotSetup.sh && sudo MasterBot/MasterBotSetup.sh
 ```
 
-ㅤE por fim, execute o programa.
+ㅤAnd finally, run the program.
 
 ```sh
 ./MasterBot.sh
 ```
 
-ㅤAproveite o programa!
+ㅤEnjoy the program!
 ㅤ
 ㅤ
 - - - - - - - - - - - - - - - - - - -
@@ -57,7 +57,7 @@ chmod 755 MasterBot/MasterBotSetup.sh && sudo MasterBot/MasterBotSetup.sh
 
 <div align="center">
  
-ㅤLista de comandos disponiveis.</div>
+ㅤList of available commands.</div>
 
 ```sh
 - Hora
@@ -74,10 +74,8 @@ chmod 755 MasterBot/MasterBotSetup.sh && sudo MasterBot/MasterBotSetup.sh
 - Ajuda
 ```
 <div align="center">
-Aberto para sugestões de comandos a aprimorações
+Open for command suggestions and enhancements
   
-Entre em contato joaocarnevalli.sec@gmail.com</div>
-
-
+Contact: joaocarnevalli.sec@gmail.com</div>
 
 - - - - - - - - - - - - - - - - - - -
