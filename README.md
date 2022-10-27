@@ -10,10 +10,10 @@
   
 ## Idea 💡</div>
 
-## **Objetivo:**
+## **Objective:**
 > Develop a robot that is capable of executing commands within Linux using Shell Script Programming. This robot must be able to understand a user's request, through the use of keywords so that it executes what is requested.
 
-## **Desafio**
+## **Challenge**
 > Your robot should be able to perform 9 functions below through commands using different tools within Linux, by understanding the instructions as below:
            
 
