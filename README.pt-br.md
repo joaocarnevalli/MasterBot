@@ -10,7 +10,7 @@
   
 ## Ideia 💡</div>
 
-## **Objetivo:**
+## **Objetivo**
 > Desenvolver um robo que seja capaz de executar comandos dentro do Linux utilizando Programação em Shell Script. Este robo deverá ser capaz de entender um pedido do usuário, através das utilização de palavras chaves para que ele execute o que for solicitado.
 
 ## **Desafio**
