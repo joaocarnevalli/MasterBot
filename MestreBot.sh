@@ -656,6 +656,170 @@ GoBuster()
         esac
 }
 
+Corinthians()
+{
+		case $NUMERO in
+		*'0'*)
+			sleep 1
+			echo
+            echo "~: Corinthians não é time, é seleção"
+            sleep 1
+            echo
+            echo "~: VAI CORINTHIANS!!"
+            open "https://www.youtube.com/watch?v=g6M8oJq-dEA"
+            sleep 3
+            clear
+		;;
+		*'1'*)
+			sleep 1
+			echo "Corinthians"
+            sleep 1
+            echo "Corinthians minha vida"
+            sleep 1
+            echo "Corinthians minha história"
+            sleep 1
+            echo "Corinthians meu amor!"
+            sleep 1
+            echo "Eu nunca vou te abandonar"
+            sleep 1
+            echo "Eu nunca vou te abandonar, porque te amo!"
+            sleep 1
+            echo "Eu nunca vou te abandonar, porque te amo!"     
+            sleep 1
+            echo "Eu sooooooou, Corinthians!"
+            sleep 1
+            echo "Eu sooooooou, Corinthians!"
+		;;
+		*'2'*)
+			sleep 1
+			echo "~: CALVO GUEDES NELES!"
+            sleep 1
+            open "https://www.youtube.com/watch?v=n-Y8oBzdq2I"
+            sleep 3
+            clear
+            echo
+            sleep 1
+            echo "~: Tropa do calvo"
+		;;
+		*'3'*)
+			sleep 1
+            echo
+			echo "~: CORINTHIANS > QUALQUER OUTRO TIME EXISTENTE NO MUNDO"
+		;;         
+        esac   
+}
+
+BemMeQuer()
+{
+		case $NUMERO in
+		*'0'*)
+			echo
+			echo "~: Bem me quer"
+            sleep 0.5
+			echo
+			echo "~: Mal me quer"
+            sleep 0.5
+			echo
+			echo "~: Bem me quer"
+            sleep 0.5
+			echo
+			echo "~: Mal me quer"
+            sleep 0.5
+			echo
+			echo "~: Bem me quer"
+            sleep 0.5
+			echo
+			echo "~: Mal me quer"
+            sleep 0.5
+			echo
+			echo "~: Bem me quer"
+            sleep 0.5
+			echo
+			echo "~: Mal me quer"
+            sleep 0.5
+			echo
+			echo "~: Bem me quer"
+            sleep 0.5
+			echo
+			echo "~: Mal me quer"
+            sleep 0.5
+			echo
+			echo "~: Bem me quer"
+            sleep 0.5
+			echo
+			echo "~: Mal me quer"
+            sleep 0.5
+            echo
+            echo "~: Pois é parceiro, nao foi dessa vez em kkkkkkkkkkkkkkkkkkkk"
+		;;
+		*'1'*)
+			sleep 1
+			echo
+			echo "~: Bem me quer"
+            sleep 0.5
+			echo
+			echo "~: Mal me quer"
+            sleep 0.5
+			echo
+			echo "~: Bem me quer"
+            sleep 0.5
+			echo
+			echo "~: Mal me quer"
+            sleep 0.5
+			echo
+			echo "~: Bem me quer"
+            sleep 0.5
+			echo
+			echo "~: Mal me quer"
+            sleep 0.5
+			echo
+			echo "~: Bem me quer"
+            sleep 0.5
+			echo
+			echo "~: Mal me quer"
+            sleep 0.5
+			echo
+			echo "~: Bem me quer"
+            sleep 0.5
+			echo
+			echo "~: Mal me quer"
+            sleep 0.5
+			echo
+			echo "~: Bem me quer"
+            sleep 0.5
+			echo
+			echo "~: Mal me quer"
+            sleep 0.5
+            echo
+            echo "~: Bem me quer"
+            sleep 0.5
+            echo
+            echo "~: Pois é parceiro, acho que dessa vez vai em!"
+            sleep 1
+            echo "~: Eu nao confiaria em um computador kkkkkkkk"
+		;;
+		*'2'*)
+			sleep 1
+			echo
+            echo "~: Irmao, esquece ela logo..."
+            sleep 1
+            echo
+            echo "~: Ela nao vai voltar kkkkk"
+            sleep 1
+            echo
+            echo "~: Ja deve estar com outro"
+		;;
+		*'3'*)
+			sleep 1
+			echo
+            echo "Toma coragem e vai logo"
+            sleep 1
+            echo
+            echo "Fica perdendo tempo ai"
+		;;
+        esac
+}
+
 # Inicio
 
 Salve
@@ -826,6 +990,46 @@ case $REQUEST in
         ;;
         *'arte'*)
                 ASCII
+        ;;
+
+
+        *'corinthians'*)
+                Corinthians
+
+        ;;
+        *'Corinthians'*)
+                Corinthians
+
+        ;;
+        *'Corint'*)
+                Corinthians
+
+        ;;
+        *'Cortinas'*)
+                Corinthians
+
+        ;;
+        *'cortinas'*)
+                Corinthians
+
+        ;;
+
+
+        *'Mal me quer'*)
+                BemMeQuer
+
+        ;;
+        *'Bem me quer'*)
+                BemMeQuer
+
+        ;;
+        *'mal me quer'*)
+                BemMeQuer
+
+        ;;
+        *'bem me quer'*)
+                BemMeQuer
+
         ;;
 
 
