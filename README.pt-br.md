@@ -1,4 +1,4 @@
-<p align="right"><a href="https://github.com/joaocarnevalli/DoorKnocker-PortScanner/blob/main/README.md">English</a> | <strong>Português</strong> </p>
+<p align="right"><a href="https://github.com/joaocarnevalli/MasterBot/blob/main/README.md">English</a> | <strong>Português</strong> </p>
 
 <div align="center">
 
