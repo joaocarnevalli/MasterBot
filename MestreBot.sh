@@ -233,7 +233,7 @@ Nmap()
             sleep 1
             echo
             sleep 1
-            read -p "~: Eai, quem vamos invadir hoje? :"
+            read -p "~: Eai, quem vamos invadir hoje? :" HOST
             sleep 1
             echo "~: Demorou irmão, scan iniciado... "
             nmap -sV $HOST
@@ -400,16 +400,7 @@ Servico()
             echo
             echo "Comando executado!"
 		;;
-
-        echo
-        echo "~: Só um segundo chefe, to terminando de fazer meu café "
-        echo
-        sleep 1
-        echo "~: Terminei o café aqui. Vou lançar os serviços na tela! "
-        echo 
-        sleep 1
-        ss -atun
-        echo "~: Na mão chefe! "
+        esac
 
 }
 
@@ -417,14 +408,57 @@ Servico()
 
 Atualize()
 {   
-        sleep 1
-        echo
-        echo "~: Demoro chefe, vou atualizar o SO aqui"
-        sleep 1
-        sudo apt upgrade -y
-        sudo apt update -y
-        sleep 1
-        echo "~: SO atualizado irmao!"
+		case $NUMERO in
+		*'0'*)
+			sleep 1
+            echo
+            echo "~: Demoro chefe, vou atualizar o SO aqui"
+            sleep 1
+            echo
+            echo "~: Isso pode demorar um pouco viu..."
+            sleep 1
+            sudo apt upgrade -y
+            sudo apt update -y
+            sleep 1
+            echo "~: SO atualizado irmao!"
+		;;
+		*'1'*)
+			sleep 1
+			echo
+            echo "~: Vou atualizar, se segura ai!"
+            sleep 1
+            sudo apt upgrade -y
+            sudo apt update -y
+            sleep 1
+            echo 
+            echo "~: Ta na ultima versao patrao!" 
+		;;
+		*'2'*)
+			sleep 1
+			echo
+            echo "~: Atualizando..."
+            sleep
+            sudo apt upgrade -y
+            sudo apt update -y
+            sleep 1
+            echo
+            echo "~: Atualizado!"
+		;;
+		*'3'*)
+			sleep 1
+			echo
+            echo "~: Quer atualizar pra que?"
+            sleep 1
+            echo
+            echo "~: Mentira, nao me importa..."
+            sleep
+            sudo apt upgrade -y
+            sudo apt update -y
+            sleep 1
+            echo
+            echo "~: Ultima versao atualizada"
+		;;
+        esac
 
 }
 
@@ -432,11 +466,48 @@ Atualize()
 
 Versao()
 {
-        sleep 1
-        echo
-        echo "Vou verificar aqui rei"
-        sudo apt apt update
-        echo
+		case $NUMERO in
+		*'0'*)
+            sleep 1
+            echo
+            echo "~: Vou verificar aqui rei"
+            sleep 1
+            sudo apt update
+            sleep 1
+            echo
+            echo "~: Atualizado!"
+		;;
+		*'1'*)
+			sleep 1
+			echo
+            echo "~: Fala rei, vou iniciar a verificacao aqui!"
+            sleep 1
+            sudo apt update
+            sleep 1
+            echo
+            echo "~: Atualizado chefia!"
+		;;
+		*'2'*)
+			sleep 1
+			echo
+            echo "~: Quer atualizar por que?"
+            sleep 1
+            sudo apt update
+            sleep 1
+            echo
+            echo "~: Atualizado rei!"
+		;;
+		*'3'*)
+			sleep 1
+			echo
+            echo "~: So um minuto parceiro"
+            sleep 1
+            sudo apt update
+            sleep 1
+            echo
+            echo "~: Atualizado manin"
+		;;
+        esac
 
 }
 
@@ -444,15 +515,57 @@ Versao()
 
 GoBuster()
 {
-        sleep
-        echo
-        read -p "Me diz o alvo ai parceiro" ENEMY
-        echo
-        sleep
-        gobuster dir -u $ENEMY -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
-        echo
-        echo "Ataque completo!"
-
+		case $NUMERO in
+		*'0'*)
+            sleep
+            echo
+            read -p "~: Me diz o alvo ai parceiro" ENEMY
+            echo
+            sleep
+            gobuster dir -u $ENEMY -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
+            echo
+            echo "~: Ataque completo!"
+		;;
+		*'1'*)
+			sleep 1
+			echo
+            echo "~: Qual seria o motivo do senhor querer fazer um brute-force de diretorio?"
+            sleep 1
+            echo
+            echo "~: Voce tem permissao pra fazer isso?"
+            sleep 1
+            echo
+            echo "~: Brincadeira, eu nao to nem ai kkkk"
+            sleep 1
+            echo
+            read -p "~: Quem vamos destruir hoje: " ENEMY
+            sleep 1
+            echo 
+            echo "~: Bora destruir! bruteforce iniciado"
+            gobuster dir -u $ENEMY -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
+            echo
+            echo "~: Ataque completo!"
+		;;
+		*'2'*)
+			sleep 1
+			echo
+            read -p "~: Vamos direto ao assunto, quem vamos atacar: " ENEMY
+            sleep 1
+            echo
+            gobuster dir -u $ENEMY -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
+            echo
+            echo "~: Ataque completo!"
+		;;
+		*'3'*)
+			sleep 1
+			echo
+            read -p "~: Quem vamos atacar hoje: " ENEMY
+            echo
+            gobuster dir -u $ENEMY -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
+            echo
+            echo "~: Ataque completo!"
+		;;
+        esac
 }
 
 # Inicio
