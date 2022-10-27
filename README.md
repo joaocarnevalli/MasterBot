@@ -2,4 +2,4 @@
 
 # MasterBOT
 
-<img src ="https://br.pinterest.com/pin/653444227197274075/" align="left">
+<img src ="https://pin.it/6rDEGsp" align="left">
