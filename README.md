@@ -1,3 +1,5 @@
+<p align="right"><strong>English</strong> | <a href="https://github.com/joaocarnevalli/DoorKnocker-PortScanner/blob/main/README.pt-br.md">Português</a></p>
+
 <div align="center">
 
 # MasterBOT 🖥 </div>
