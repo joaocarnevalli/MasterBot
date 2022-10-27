@@ -292,10 +292,10 @@ Conexao()
             if [ $? -eq 0 ]
             then
                     echo
-                    echo "O servidor esta Online :/"
+                    echo "~: O servidor esta Online :/"
             else
                     echo
-                    echo "O servidor esta Offline :)"
+                    echo "~: O servidor esta Offline :)"
             fi
             sleep 1
             echo
@@ -318,14 +318,14 @@ Conexao()
             if [ $? -eq 0 ]
             then
                     echo
-                    echo "O servidor esta Online :/"
+                    echo "~: O servidor esta Online :/"
             else
                     echo
-                    echo "O servidor esta Offline :)"
+                    echo "~: O servidor esta Offline :)"
             fi
             sleep 1
             echo
-            echo "Ja fiz!"
+            echo "~: Ja fiz!"
         ;;
         *'2'*)
             sleep 1
@@ -337,22 +337,22 @@ Conexao()
             if [ $? -eq 0 ]
             then
                     echo
-                    echo "O servidor esta Online :/"
+                    echo "~: O servidor esta Online :/"
             else
                     echo
-                    echo "O servidor esta Offline :)"
+                    echo "~: O servidor esta Offline :)"
             fi
             sleep 1
             echo
-            echo "Completo!"
+            echo "~: Completo!"
         ;;
         *'3'*)
             sleep 1
             echo
-            echo "Sei nao em, ta querendo verificar a conexao por que em?"
+            echo "~: Sei nao em, ta querendo verificar a conexao por que em?"
             sleep 1
             echo
-            read -p "Brincadeira, me fala o host que vamos verificar: " HOST
+            read -p "~: Brincadeira, me fala o host que vamos verificar: " HOST
             sleep 1
             PING="ping -c 4 $HOST"
             $PING
@@ -370,6 +370,68 @@ Conexao()
         ;;       
         esac
 
+}
+
+ASCII()
+{
+        case $NUMERO in
+        *'0'*)
+            sleep 1
+            echo
+            echo "~: Entao voce quer uma artezinha?"
+            sleep 1
+            echo
+            read -p "~: Qual frase voce quer transformar? : " FRASE
+            sleep 1
+            echo
+            figlet $FRASE
+            sleep 1 
+            echo
+            echo "~: Na tela!"
+        ;;
+        *'1'*)
+            sleep 1
+            echo
+            echo "~: Quer um ASCII bonitinho ne? beleza!"
+            sleep 1
+            echo
+            read -p "~: Agora me fala, qual frase voce quer transformar? : " FRASE
+            sleep 1
+            echo
+            figlet $FRASE
+            sleep 1
+            echo
+            echo "Ta ai"
+        ;;
+        *'2'*)
+            sleep 1
+            echo
+            echo "~: Quer uma artezinha em ASCII? Boto fe"
+            sleep 1
+            echo
+            read -p "~: Me fala qual a frase que voce quer transformar? : " FRASE
+            sleep 1
+            echo
+            figlet $FRASE
+            sleep 1
+            echo
+            echo "Na mao chefe"
+        ;;
+        *'3'*)
+            sleep 1
+            echo
+            echo "~: Po rei, quer uma arte bonitinha para colocar no seu codigo ne?"
+            sleep 1
+            echo
+            read -p "~: Fala ai a frase? : " FRASE
+            sleep 1
+            figlet $FRASE
+            sleep 1
+            echo
+            echo "Na tela chefia"
+        ;;
+        esac
+        
 }
 
 # Funcao De Servicos
@@ -747,10 +809,31 @@ case $REQUEST in
         ;;
         *'Gobuster'*)
                 GoBuster
+        ;;
+
+
+        *'ASCII'*)
+                ASCII
 
         ;;
+        *'ascii'*)
+                ASCII
+
+        ;;
+        *'Arte'*)
+                ASCII
+
+        ;;
+        *'arte'*)
+                ASCII
+        ;;
+
+
         *''*)
                 Ajuda
 
         ;;
+
+        
+        
 esac
