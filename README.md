@@ -8,7 +8,7 @@
 
 <div align="center">
   
-## Ideia 💡</div>
+## Idea 💡</div>
 
 ## **Objetivo:**
 > Develop a robot that is capable of executing commands within Linux using Shell Script Programming. This robot must be able to understand a user's request, through the use of keywords so that it executes what is requested.
@@ -53,7 +53,7 @@ chmod 755 MasterBot/MasterBotSetup.sh && sudo MasterBot/MasterBotSetup.sh
 
 <div align="center">
 
-## Comandos ⌨ </div> 
+## Commands ⌨ </div> 
 
 <div align="center">
  
